@@ -1,0 +1,19 @@
+body {
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    height: 15rem;
+    background-color: linear-gradient(top-right, rgb(156,253,102), rgb(126, 255, 57));
+}
+
+#memory-game {
+    width: 60%;
+    max-width: 50rem;
+    min-width: 18rem;
+    height: 40%;
+    
+}
