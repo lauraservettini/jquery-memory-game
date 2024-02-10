@@ -30,7 +30,7 @@ function openCard(){
 
             divId = '';
             imgSrc = '';
-            
+
             moves++;
             $('#moves').html(moves);
         }
@@ -38,7 +38,8 @@ function openCard(){
 
         if (imgArray.length == imgMatchFound){
             setTimeout(function(){
-                alert('The game is finished! You have done ' + moves + ' moves to achieve the result! Click reset tu start again!')
+                $('#modal-text').html('The game is finished!</br></br>You have done <strong>' + moves + ' moves</strong> to achieve the result!</br></br> Click reset to start again!')
+                $('#modal').css('display', 'block');
             }, 600);
         }
     }
@@ -46,4 +47,9 @@ function openCard(){
 
 $(document). ready(function(){
     $('#memory-game div').click(openCard)
+
+    $('#modal button').click(function(){
+        $('#modal').hide(1000);
+        // $('#modal').css('display', 'none');
+    })
 });

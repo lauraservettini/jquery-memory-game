@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JQuery Memory Game</title>
     <script src="./jquery-3.7.1.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <script src="./scripts/memory-game-settings.js" defer></script>
     <script src="./scripts/memory-game-play.js" defer></script>
     <script src="./scripts/reset-game.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>JQuery Memory Game</h1>
+      <h1>JQuery Memory Game</h1>
     </header>
     <main>
-        <section id="container">
-            <div id="info">
-                <span class="text">Moves: </span>
-                <span id="moves" class="text">0</span>
-                <a class="button">Reset</a>
-            </div>
-            <div  id="memory-game">
-
-            </div>
-            
-        </section>
+      <section id="container">
+        <div id="info">
+          <span class="text">Moves: </span>
+          <span id="moves" class="text">0</span>
+          <a class="button reset">Reset</a>
+        </div>
+        <div id="memory-game"></div>
+      </section>
     </main>
     <footer>Copyright © 2024 Laura Servettini</footer>
-</body>
+  </body>
 </html>
 
-    
+<!-- Modal -->
+<div id="modal">
+  <div id="modal-content">
+    <div id="modal-container">
+        <p id="modal-text"></p>
+        <button class="button">Ok</button>
+        <button class="button reset">Reset</button>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
