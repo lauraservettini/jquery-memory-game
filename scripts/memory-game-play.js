@@ -30,9 +30,11 @@ function openCard(){
 
             divId = '';
             imgSrc = '';
+            
+            moves++;
+            $('#moves').html(moves);
         }
         
-        moves++;
 
         if (imgArray.length == imgMatchFound){
             setTimeout(function(){
