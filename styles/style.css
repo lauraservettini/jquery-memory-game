@@ -85,6 +85,11 @@ header h1 {
     box-shadow: 4px 4px 10px 2px rgb(67,67,67);
 }
 
+.memory-tab:hover {
+    background-color: rgb(168, 252, 123);
+    box-shadow: 4px 4px 12px 4px rgb(67,67,67);
+}
+
 .memory-tab img {
     display: none;
     border-radius: 8px;
